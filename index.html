@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roniel Sato Cuizon | IT Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        :root {
+            --primary: #2a7596; /* Matches the color in image_fc1623.png */
+            --dark: #222;
+            --light: #f4f7f6;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background: var(--light); color: var(--dark); line-height: 1.6; }
+        header { background: white; padding: 2rem 10%; text-align: center; border-bottom: 3px solid var(--primary); }
+        h1 { color: var(--primary); margin-bottom: 0.5rem; }
+        .container { max-width: 1100px; margin: 2rem auto; padding: 0 1rem; }
+        section { background: white; padding: 2rem; margin-bottom: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        h2 { color: var(--primary); border-bottom: 2px solid var(--light); padding-bottom: 0.5rem; margin-bottom: 1rem; }
+        
+        /* Grid for Expertise Circles */
+        .expertise-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .skill-card { background: var(--light); padding: 1.5rem; text-align: center; border-radius: 50%; width: 180px; height: 180px; margin: auto; display: flex; flex-direction: column; justify-content: center; align-items: center; border: 4px solid var(--primary); font-weight: bold; font-size: 0.9rem; }
+        
+        /* Experience Timeline */
+        .job { margin-bottom: 1.5rem; padding-left: 1rem; border-left: 3px solid var(--primary); }
+        .job-title { font-weight: bold; color: var(--dark); }
+        .company { color: var(--primary); font-size: 0.9rem; font-weight: 600; }
+        
+        footer { text-align: center; padding: 2rem; color: #666; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Roniel Sato Cuizon</h1>
+    <p>IT Supervisor / IT Manager / Full-Stack Developer</p>
+    <p><i data-feather="mail" style="width:14px; height:14px;"></i> ronielcuizon@gmail.com | <i data-feather="phone" style="width:14px; height:14px;"></i> 09471916560</p>
+</header>
+
+<div class="container">
+    <section id="about">
+        <h2>About Me</h2>
+        <p><strong>Accomplished IT Leader</strong> poised to excel as an IT Supervisor or Manager. Expertly drives App & Web Development alongside robust Network, Firewall, and System Management frameworks. Blends hands-on mastery of CCTV/Cabling, IP Telephony, and Tools Installation with a strategic mindset to optimize infrastructure, secure workflows, and lead high-performing teams.</p>
+    </section>
+
+    <section id="expertise">
+        <h2>Areas of Expertise</h2>
+        <div class="expertise-grid">
+            <div class="skill-card">App & Web Development</div>
+            <div class="skill-card">Network & Firewall Infrastructure</div>
+            <div class="skill-card">System Management</div>
+            <div class="skill-card">CCTV & Network Cabling Mgmt</div>
+            <div class="skill-card">Graphic & Video Editing</div>
+            <div class="skill-card">IP Telephony</div>
+            <div class="skill-card">Com Tech Support</div>
+            <div class="skill-card">Tools Installation</div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="job">
+            <div class="job-title">Corporate Governance - IT Supervisor</div>
+            <div class="company">Unido Capital Holdings, Inc. (Sept 2022 – Dec 2023)</div>
+            <p>Led corporate IT infrastructure monitoring, technical governance, and policy enforcement. Handled network, hardware, software, CCTV, and SAP POSDM sales variance issues while releasing formal IT procedures.</p>
+        </div>
+        <div class="job">
+            <div class="job-title">IT Administrator</div>
+            <div class="company">Suarez Brothers Metal Arts Inc. (Apr 2018 – Aug 2022)</div>
+            <p>Managed systems administration, network security, and specialized CNC machinery. Developed the corporate website and managed local/online CCTV viewing infrastructure.</p>
+        </div>
+        <div class="job">
+            <div class="job-title">Application Developer</div>
+            <div class="company">My Elf Station Inc. (Feb 2017 – Mar 2018)</div>
+            <p>Engineered enterprise desktop apps (HR, Accounting, Sales) using C#.NET and VB.NET over PostgreSQL/MySQL backends implementing clean MVP architectural patterns.</p>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2026 Roniel Sato Cuizon. Built with GitHub Pages.</p>
+</footer>
+
+<script>
+    feather.replace();
+</script>
+</body>
+</html>

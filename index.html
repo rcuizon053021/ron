@@ -15,11 +15,17 @@
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         body { background: var(--light); color: var(--dark); line-height: 1.6; }
         
-        /* Modernized Header with Profile Picture on Left */
+        /* Modernized Header layout fixed for structural alignment */
         header { 
             background: white; 
-            padding: 2.5rem 10%; 
             border-bottom: 3px solid var(--primary); 
+            padding: 2.5rem 0;
+        }
+        /* Align inner header perfectly with the rest of the site layout */
+        .header-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1rem;
             display: flex;
             align-items: center;
             gap: 2.5rem;
@@ -35,8 +41,6 @@
             object-fit: cover;
             border: 4px solid var(--primary);
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            padding-left: 150px;
-           
         }
         .header-text {
             flex-grow: 1;
@@ -123,7 +127,7 @@
 
         /* Responsiveness for small screens */
         @media (max-width: 768px) {
-            header { flex-direction: column; text-align: center; padding: 2rem 5%; }
+            .header-container { flex-direction: column; text-align: center; padding: 0 5%; gap: 1.5rem; }
             .contact-info { justify-content: center; }
         }
     </style>
@@ -131,17 +135,18 @@
 <body>
 
 <header>
-    <div class="profile-container">
-        <!-- Replace 'profile.jpg' with your actual image path or GitHub URL path -->
-        <img src="profile.jpg" alt="Roniel Sato Cuizon" class="profile-img" onerror="this.src='https://via.placeholder.com/150'">
-    </div>
-    <div class="header-text">
-        <h1>Roniel Sato Cuizon</h1>
-        <div class="title-sub">IT Supervisor / IT Manager / Web & Application Developer</div>
-        <div class="contact-info">
-            <div class="contact-item"><i data-feather="mail"></i> <a href="mailto:ronielcuizon@gmail.com" style="color:inherit; text-decoration:none;">ronielcuizon@gmail.com</a></div>
-            <div class="contact-item"><i data-feather="phone"></i> 09471916560</div>
-            <div class="contact-item"><i data-feather="map-pin"></i> Cebu City, Philippines</div>
+    <div class="header-container">
+        <div class="profile-container">
+            <img src="profile.jpg" alt="Roniel Sato Cuizon" class="profile-img" onerror="this.src='https://via.placeholder.com/150'">
+        </div>
+        <div class="header-text">
+            <h1>Roniel Sato Cuizon</h1>
+            <div class="title-sub">IT Supervisor / IT Manager / Web & Application Developer</div>
+            <div class="contact-info">
+                <div class="contact-item"><i data-feather="mail"></i> <a href="mailto:ronielcuizon@gmail.com" style="color:inherit; text-decoration:none;">ronielcuizon@gmail.com</a></div>
+                <div class="contact-item"><i data-feather="phone"></i> 09471916560</div>
+                <div class="contact-item"><i data-feather="map-pin"></i> Cebu City, Philippines</div>
+            </div>
         </div>
     </div>
 </header>
